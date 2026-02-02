@@ -2,8 +2,9 @@
 import { createClient } from '@supabase/supabase-js';
 import type { Database } from './types';
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+// Use environment variables or mock values for development
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://mock-supabase-url.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || 'mock-key-for-development';
 
 // Import the supabase client like this:
 // import { supabase } from "@/integrations/supabase/client";
